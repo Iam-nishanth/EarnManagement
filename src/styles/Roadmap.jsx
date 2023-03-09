@@ -3,13 +3,25 @@ import styled from "styled-components";
 
 export const MainWrapper = styled.div`
     color: #fff;
-    font-family: sans-serif;
     width: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
     
-    @media (max-width: 500px){
-        /* padding: 0 15px; */
+    
+    &::before{
+        content: "";
+        position: absolute;
+        border-bottom: 3px solid rgba(255,255,255,0.18);
+        border-bottom-right-radius: 26px;
+        top: -16px;
+        width: 17.6%;
+        height: 53px;
+        transform: rotateX(180deg);
+        
+        @media (max-width: 365px){
+            width: 20%;
+        }
     }
     `
 export const Details = styled.div`
@@ -23,6 +35,7 @@ export const Details = styled.div`
     transition: all 0.5s ease-in-out;
     border-left: 3px solid rgba(255,255,255,0.12);
 
+    
 
     h1{
         font-size: 80px;
@@ -46,7 +59,7 @@ export const Details = styled.div`
         /* padding-right: 30px; */
         h1{
             font-size: 50px;
-            font-weight: 700;
+            font-weight: 500;
         }p{
             font-size: 14px;
             width: 200px;
@@ -75,15 +88,15 @@ export const Container = styled.div`
     flex-direction: column;
     width: 100%;
     position: relative;
-    /* p{
-        width: 380px;
-    } */
-    @media (max-width: 390px){
-        /* padding: 0 10px; */
-    }
+    
+    
     @media (max-width: 450px){
         align-self: center;
-        max-width: 85%;
+        max-width: 320px;
+        padding-right: 15px;
+    }
+    @media(max-width: 330px){
+        max-width: 300px;
     }
     
 `
@@ -200,7 +213,10 @@ export const ImageContainer = styled.div`
     border-left: 3px solid rgba(255, 255, 255, 0.12);
     border-radius:  0 30px 0 30px;
     transition: all 0.5s ease-in-out;
-
+    background-blend-mode: overlay normal;
+    background: radial-gradient(41.76% 41.76% at 50% 50%, rgba(0, 209, 255, 0.24) 0%, rgba(0, 163, 255, 0) 100%);
+    background-repeat: no-repeat;
+    
     img{
         width: 200px;
     }
@@ -261,7 +277,7 @@ export const BoxGroup = styled.div`
             right: -80px;
         }
         @media (max-width: 480px){
-            /* right: 0; */
+            right: -65px;
         }
         @media (max-width: 370px){
             right: -50px;
@@ -310,6 +326,9 @@ export const BoxGroup = styled.div`
 export const TextBox1 = styled.div`
     padding-left: 150px;
     transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 
     h1{
         font-size: 70px;
@@ -346,6 +365,9 @@ export const TextBox1 = styled.div`
 `
 export const TextBox2 = styled.div`
     transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 
     h1{
         font-size: 70px;
@@ -380,6 +402,6 @@ export const TextBox2 = styled.div`
     }
 `
 export const Img = styled.img``
-export const Heading1 = styled.h1``
-export const Heading3 = styled.h3``
+export const H1 = styled.h1``
+export const H3 = styled.h3`` 
 export const Para = styled.p``

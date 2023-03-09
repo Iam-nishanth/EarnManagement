@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 export const MainWrapper = styled.div`
     color: #fff;
-    font-family: sans-serif;
     display: flex;
     justify-content: center;
     `
@@ -121,6 +120,11 @@ export const ContactInput = styled.div`
         cursor: pointer;
         font-weight: bold;
         border: none;
+
+        &:hover{
+            background: #359dfd55;
+            color: #6C6C6C;
+        }
         
     }
     @media (max-width: 800px){

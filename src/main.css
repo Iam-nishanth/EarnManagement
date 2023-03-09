@@ -1,18 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;500;600;700;900&display=swap');
 *{
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Outfit', sans-serif;
 }
 body{
-    /* width: 100%; */
     background: url('/Rectangle.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #040809;
-    /* background-blend-mode: overlay normal; */
-    /* overflow-x: hidden; */
-    font-family: sans-serif;
-
-    /* background-position: center; */
+    font-family: 'Outfit', sans-serif;
 }

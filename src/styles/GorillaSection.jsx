@@ -1,9 +1,9 @@
 import styled from "styled-components"
 
 export const MainWrapper = styled.section`
+
     color: #fff;
     display: flex;
-    /* display: none; */
 
     width: 100%;
     max-width: 1300px;
@@ -27,25 +27,6 @@ export const TitleContainer = styled.div`
     /* width: 90%; */
     flex: 1;
     transition: all 0.5s ease-in-out;
-
-    p{
-        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap');
-        font-family: 'Outfit', sans-serif;
-        font-weight: 400;
-        font-size: 20px;
-        color: #fff;
-        transition: all 0.5s ease-in-out;
-    }
-    h1{
-        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap');
-        font-family: 'Outfit', sans-serif;
-        font-weight: 500;
-        font-size: 80px;
-        color: #fff;
-        align-self: left;
-        transition: all 0.5s ease-in-out;
-
-    }
     
     @media (max-width: 1300px){
         text-align: center;
@@ -55,6 +36,7 @@ export const TitleContainer = styled.div`
         }
     }
     @media (max-width: 500px){
+        gap: 10px;
         h1{
             font-size: 65px;
             padding: 15px;
@@ -131,7 +113,12 @@ export const InputContainer = styled.div`
         width: 68px;
         justify-self: flex-end;
         transition: all 0.5s ease-in-out;
-
+        &:hover{
+            svg{
+                transform: rotate(360deg);
+                transition: 0.60s;
+            }
+        }
     }
 
     @media (max-width: 1300px){
@@ -205,7 +192,7 @@ export const BoxContainer = styled.div`
         top: 120px;
         left: 250px;
     }
-    div{height: 70px;}
+    /* div{height: 70px;} */
     div:first-child{
         top: 130px;
         left: -20px;
@@ -232,15 +219,15 @@ export const BoxContainer = styled.div`
             left: 380px;
         }
         div:nth-child(3){
-            top: 230px;
+            top: 200px;
         }
         div:nth-child(4){
             left: 380px;
-            top: 150px;
+            top: 110px;
         }
         img{
             left: 220px;
-            top: 75px;
+            top: 10px;
         }
     }
     @media (max-width: 600px){
@@ -306,7 +293,7 @@ export const BoxContainer = styled.div`
             top: -20px;
         }
         div:nth-child(3){
-            left: 0px;
+            left: 20px;
             top: 80px;
         }
         div:nth-child(4){
@@ -344,7 +331,7 @@ export const BoxContainer = styled.div`
 export const TextBox = styled.div`
     position: relative;
     width: 243px;
-    height: 83px;
+    height: 87px;
     background: rgba(255,255,255,0.06);
     backdrop-filter: blur(40px);
     border-radius: 90px;
@@ -353,17 +340,41 @@ export const TextBox = styled.div`
     align-items: center;
     padding: 30px;
     transition: all 0.5s ease-in-out;
-    
+
+    p{
+        font-size: 16px;
+    }
+    @media (max-width: 770px){
+        p{font-size:14px;}
+    }
+
     @media (max-width: 520px){
         border-radius: 70px;
         backdrop-filter: blur(20px);
+        padding: 18px;
         p{
             font-size: 10px;
         }
     }
+    @media (max-width: 350px){
+        p{
+            font-size: 9px;
+        }
+    }
 `
-export const H1 = styled.h1``
-export const Para = styled.p``
+export const H1 = styled.h1`
+        font-weight: 500;
+        font-size: 80px;
+        color: #fff;
+        align-self: left;
+        transition: all 0.5s ease-in-out;
+`
+export const Para = styled.p`
+        font-weight: 400;
+        font-size: 20px;
+        color: #fff;
+        transition: all 0.5s ease-in-out;
+`
 
 export const Input = styled.input``
 export const Select = styled.select``

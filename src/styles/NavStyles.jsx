@@ -14,7 +14,7 @@ export const Nav = styled.nav`
     /* position: sticky; */
     /* top: 0; */
     z-index: 5;
-    font-family: "Graphik";
+    font-family: "Graphik",sans-serif;
     font-weight: 500;
     letter-spacing: 0.3px;
 
@@ -37,6 +37,10 @@ export const NavContainer = styled.div`
 `
 export const Image = styled.img`
     height: 100%;
+    &:hover{
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        scale: 1.05;
+    }
 `
 export const MobileIcon = styled.div`
     display: none;
@@ -74,8 +78,11 @@ export const NavLink = styled(Link)`
     height: 100%;
     cursor: pointer;
 
-    &.active{
-        border-bottom: 3px solid cyan;
+    &:hover{
+        transition: 0.5s all ease-in-out;
+        /* color: #3990ac; */
+        border-bottom: 3px solid #3990ac;
+        scale: 1.1;
     }
 `
 export const NavSocials = styled.div`
@@ -90,11 +97,17 @@ export const NavSocials = styled.div`
     height: 56px;
     border: 1px solid rgba(255, 255, 255, 0.17);
     border-radius: 60px;
-    transition: 1s all ease;
+    transition: 0.5s all ease-in-out;
     a{
         color: #fff;
         font-size: 20px;
+        transition: 0.2s all ease-in-out;
+        &:hover{
+            scale: 1.3;
+            color: #3990ac;
+        }
     }
+
 
 @media screen and (max-width: 600px) {
     display: none;

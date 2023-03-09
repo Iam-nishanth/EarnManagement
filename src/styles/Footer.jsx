@@ -54,6 +54,9 @@ export const Container2 = styled.div`
     display: flex;
     gap: 30px;
     flex-direction: column;
+    *{
+        cursor: pointer;
+    }
     h3:first-child{
         color: blue;
     }
@@ -79,7 +82,6 @@ export const Copyright = styled.div`
     justify-content: center;
     align-items: center;
     p{
-        font-family: sans-serif;
         letter-spacing: 0.3px;
         font-size: 15px;
         font-weight: 400;
@@ -103,6 +105,13 @@ export const Discord = styled.button`
     transition: 0.5s all ease-in-out ;
     cursor: pointer;
     border: none;
+    &:hover{
+        background-color: coral;
+        svg,p{
+            scale: 1.1;
+        }
+        
+    }
 
     display: flex;
     justify-content: center;
@@ -112,9 +121,10 @@ export const Discord = styled.button`
     gap: 5px;
     svg{
         font-size: 25px;
+        transition: all 0.5s ease-in-out;
+
     }
     p{
-        font-family: sans-serif;
         font-size: 14px;
         font-weight: 900;
         letter-spacing: 0.1px;
@@ -139,4 +149,9 @@ export const Discord = styled.button`
 export const H3 = styled.h3`
 `
 export const Link = styled.a`
+
+&:hover{
+    color: #3990ac;
+    scale: 1.05;
+}
 `

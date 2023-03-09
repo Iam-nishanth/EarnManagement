@@ -2,17 +2,16 @@ import React from 'react'
 import { FaDiscord, FaTwitter } from 'react-icons/fa'
 import { Close, Container, Icon, MobileMenu, NLink, SocialMenu, Wrapper } from '../../../styles/MobileNav'
 
-const MobileNav = ({isOpen,toggle}) => {
-  return (
+const MobileNav = ({isOpen,toggle}) => 
     <Container isOpen={isOpen} >
         <Icon onClick={toggle}>
           <Close/>
         </Icon>
         <Wrapper>
           <MobileMenu>
-            <NLink to='#' onClick={toggle}>Road Map</NLink>
-            <NLink to='#' onClick={toggle}>Contact</NLink>
-            <NLink to='#' onClick={toggle}>Blog</NLink>
+            <NLink to='/roadmap' onClick={toggle}>Road Map</NLink>
+            <NLink to='/contact' onClick={toggle}>Contact</NLink>
+            <NLink to='/blog' onClick={toggle}>Blog</NLink>
           </MobileMenu>
           <SocialMenu>
             <FaDiscord/>
@@ -20,7 +19,6 @@ const MobileNav = ({isOpen,toggle}) => {
           </SocialMenu>
         </Wrapper>
     </Container>
-  )
-}
+
 
 export default MobileNav

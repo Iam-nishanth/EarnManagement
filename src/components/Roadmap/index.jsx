@@ -1,6 +1,6 @@
 import React from 'react'
 import monero from '../assets/images/monero.png'
-import { MainWrapper, FirstBox, Img, Container, Details, Box1, InnerCircle1, Box, InnerCircle, BoxGroup, ImageContainer, TextBox1, TextBox2, Heading1, Heading3, Para } from '../../styles/Roadmap.jsx'
+import { MainWrapper, FirstBox, Img, Container, Details, Box1, InnerCircle1, Box, InnerCircle, BoxGroup, ImageContainer, TextBox1, H1,H3,TextBox2, Para } from '../../styles/Roadmap.jsx'
 
 const Roadmap = () => {
 
@@ -9,8 +9,6 @@ const Roadmap = () => {
     const N = [2, 3, 4, 5, 6]
     return (
         <MainWrapper>
-
-
             <Container>
                 <Details>
                     <h1>Road Map</h1>
@@ -22,8 +20,8 @@ const Roadmap = () => {
                             <InnerCircle1/>
                         </Box1>
                         <TextBox1>
-                            <Heading1>{year}</Heading1>
-                            <Heading3>Q1</Heading3>
+                            <H1>{year}</H1>
+                            <H3>Q1</H3>
                             <Para>{text}</Para>
                         </TextBox1>
                     </FirstBox>
@@ -35,13 +33,12 @@ const Roadmap = () => {
                             <InnerCircle />
                         </Box>
                         <TextBox2 className={'textbox' + elementInArray}>
-                            <Heading1>{year}</Heading1>
-                            <Heading3>{'Q' + elementInArray}</Heading3>
+                            <H1>{year}</H1>
+                            <H3>{'Q' + elementInArray}</H3>
                             <Para>{text}</Para>
                         </TextBox2>
                     </BoxGroup>
-                )
-                )}
+                ))}
             </Container>
         </MainWrapper>
 

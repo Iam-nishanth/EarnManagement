@@ -25,7 +25,6 @@ const Home = () => {
       <Roadmap />
       <Contact />
       <Footer />
-      
     </Container>
   )
 }

@@ -2,14 +2,12 @@ import React from 'react'
 import SiteLogo from '../../assets/images/SiteLogo.svg'
 import { Nav, NavContainer, Image, MobileIcon, NavMenu, NavItem, NavLink, NavSocials, Hamburger } from '../../../styles/NavStyles'
 import { NavLink as Link, Router } from 'react-router-dom'
-import { FaBars, FaDiscord, FaTwitter } from 'react-icons/fa'
+import {  FaDiscord, FaTwitter } from 'react-icons/fa'
 import Roadmap from '../../Roadmap'
 import Contact from '../../Contact'
 
 
-const Navbar = ({ toggle }) => {
-  return (
-    <>
+const Navbar = ({ toggle }) => 
       <Nav>
         <NavContainer>
           <Link to='/'>
@@ -30,13 +28,11 @@ const Navbar = ({ toggle }) => {
             </NavItem>
           </NavMenu>
           <NavSocials>
-            <Link to='/discord'><FaDiscord /></Link>
-            <Link to='/twitter'><FaTwitter /></Link>
+            <Link to='https://discord.com' target='_blank'><FaDiscord /></Link>
+            <Link to='https://twitter.com' target='_blank'><FaTwitter /></Link>
           </NavSocials>
         </NavContainer>
       </Nav>
-    </>
-  )
-}
+
 
 export default Navbar
