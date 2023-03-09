@@ -20,9 +20,6 @@ export const MainWrapper = styled.div`
         transform: rotateX(180deg);
         
         @media (max-width: 450px){
-            width: 25%;
-        }
-        @media (max-width: 390px){
             width: 22%;
         }
     }
@@ -95,11 +92,11 @@ export const Container = styled.div`
     
     @media (max-width: 450px){
         align-self: center;
-        max-width: 320px;
+        max-width: 87%;
         padding-right: 15px;
     }
     @media(max-width: 330px){
-        max-width: 300px;
+        max-width: 87%;
     }
     
 `

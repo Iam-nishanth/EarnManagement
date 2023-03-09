@@ -141,9 +141,11 @@ export const Discord = styled.button`
         }
     }
     @media (max-width: 600px){
-        right: 5px;
+        right: 15px;
         bottom: 25px;
-        /* display: none; */
+    }
+    @media (max-width: 400px){
+        p{font-size:10px;}
     }
 `
 export const H3 = styled.h3`
