@@ -80,7 +80,6 @@ export const ContactDetails = styled.div`
         }
         @media (max-width: 400px){
             font-size: 16px;
-            text-align: center;
         }
     }
 `
@@ -121,14 +120,13 @@ export const ContactInput = styled.div`
         text-align: center;
         cursor: pointer;
         font-weight: bold;
+        border: none;
         
     }
-    @media (max-width: 760px){
+    @media (max-width: 800px){
         button{
-        width: 90%;
-        border-radius: 50px;
-        height: 50px;
-        align-self: center;
+        width: 100px;
+        height: 100px;
       }
       padding-left: 50px;
     }

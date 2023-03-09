@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../assets/images/logo.png'
+import SiteLogo from '../../assets/images/SiteLogo.svg'
 import { Nav, NavContainer, Image, MobileIcon, NavMenu, NavItem, NavLink, NavSocials, Hamburger } from '../../../styles/NavStyles'
 import { NavLink as Link, Router } from 'react-router-dom'
 import { FaBars, FaDiscord, FaTwitter } from 'react-icons/fa'
@@ -13,7 +13,7 @@ const Navbar = ({ toggle }) => {
       <Nav>
         <NavContainer>
           <Link to='/'>
-            <Image src={logo} alt='logo-img' />
+            <Image src={SiteLogo} alt='logo-img' />
           </Link>
           <MobileIcon onClick={toggle}>
             <Hamburger />

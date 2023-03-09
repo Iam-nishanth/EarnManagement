@@ -7,7 +7,10 @@ export const MainWrapper = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* padding: 100px 0; */
+    
+    @media (max-width: 500px){
+        /* padding: 0 15px; */
+    }
     `
 export const Details = styled.div`
     align-self: center;
@@ -40,6 +43,7 @@ export const Details = styled.div`
     @media (max-width: 500px){
         /* text-align: center; */
         width: 100%;
+        /* padding-right: 30px; */
         h1{
             font-size: 50px;
             font-weight: 700;
@@ -47,9 +51,10 @@ export const Details = styled.div`
             font-size: 14px;
             width: 200px;
         }
+        padding-left: 20px;
     }
 `
-export const First = styled.div`
+export const FirstBox = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,7 +78,13 @@ export const Container = styled.div`
     /* p{
         width: 380px;
     } */
-    
+    @media (max-width: 390px){
+        /* padding: 0 10px; */
+    }
+    @media (max-width: 450px){
+        align-self: center;
+        max-width: 85%;
+    }
     
 `
 export const Box = styled.div`
@@ -98,11 +109,15 @@ export const Box = styled.div`
         height: 90px;
     }
     @media (max-width: 480px){
-        width: 130px;
+        width: 120px;
         height: 80px;
     }
+
+    @media (max-width: 370px){
+        width: 100px;
+    }
 `
-export const InnerBox = styled.div`
+export const InnerCircle = styled.div`
     width: 100px;
     height: 100px;
     background: linear-gradient(200deg, #778282 0%, #2F3842 100%);
@@ -121,6 +136,10 @@ export const InnerBox = styled.div`
     @media (max-width: 480px){
         width: 55px;
         height: 55px;
+    }
+    @media (max-width: 370px){
+        width: 48px;
+        height: 48px;
     }
 `
 export const Box1 = styled.div`
@@ -154,7 +173,7 @@ export const Box1 = styled.div`
         left: -60px;
     }
 `
-export const InnerBox1 = styled.div`
+export const InnerCircle1 = styled.div`
     width: 100px;
     height: 100px;
 
@@ -196,7 +215,7 @@ export const ImageContainer = styled.div`
         }
     }
 `
-export const Bunch = styled.div`
+export const BoxGroup = styled.div`
     display: flex;
     align-items: center;
     width: 100%;
@@ -242,7 +261,10 @@ export const Bunch = styled.div`
             right: -80px;
         }
         @media (max-width: 480px){
-            right: -65px;
+            /* right: 0; */
+        }
+        @media (max-width: 370px){
+            right: -50px;
         }
     }
     .box3,.box5{
@@ -253,6 +275,9 @@ export const Bunch = styled.div`
         }
         @media (max-width: 480px){
             left: -65px;
+        }
+        @media (max-width: 370px){
+            left: -50px;
         }
     }
     .textbox2,.textbox4,.textbox6{
@@ -312,7 +337,10 @@ export const TextBox1 = styled.div`
     @media (max-width: 500px){
         h1{font-size:50px;}
         h3{font-size:25px;}
-        p{font-size:14px;}
+        p{
+            font-size:14px;
+            width: 150px;
+        }
         padding-left: 150px;
     }
 `
@@ -345,7 +373,10 @@ export const TextBox2 = styled.div`
     @media (max-width: 500px){
         h1{font-size:50px;}
         h3{font-size:25px;}
-        p{font-size:14px;}
+        p{
+            font-size:14px;
+            width: 150px;
+        }
     }
 `
 export const Img = styled.img``

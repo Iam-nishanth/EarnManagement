@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import Contact from '../Contact'
+import Footer from '../Footer'
 
 import GorillaSection from '../GorillaSection'
 import MobileNav from '../Header/MobileNav'
@@ -10,7 +12,7 @@ import Roadmap from '../Roadmap'
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
 
-  const toggle = () =>{
+  const toggle = () => {
     setIsOpen(!isOpen)
   }
 
@@ -18,17 +20,11 @@ const Home = () => {
     <Container>
 
       <MobileNav isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle ={toggle} />
-
-      {/* <Title  /> */}
-    <GorillaSection/>
-    {/* <RoadmapSection/> */}
-      <Roadmap/>
-      {/* <Contact/> */}
-      
-      {/* <Footer/> */}
-      
-     
+      <Navbar toggle={toggle} />
+      <GorillaSection />
+      <Roadmap />
+      <Contact />
+      <Footer />
       
     </Container>
   )

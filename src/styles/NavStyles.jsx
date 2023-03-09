@@ -19,10 +19,10 @@ export const Nav = styled.nav`
     letter-spacing: 0.3px;
 
     @media screen and (max-width: 960px){
-        transition: 0.8s all ease;
+        transition: 0.5s all ease;
         img{
-            height: 80%;
-            transition: 1s all ease;
+            height: 100%;
+            transition: .5s all ease;
         }
 
     }

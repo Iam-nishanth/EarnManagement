@@ -3,7 +3,7 @@
 import styled from "styled-components";
 
 export const FooterWrapper = styled.footer`
-    height: 350px;
+    height: 320px;
     border-top:1px solid rgba(255, 255, 255, 0.21)    ;
     color: #fff;
     position: relative;
@@ -14,7 +14,7 @@ export const FooterWrapper = styled.footer`
     }
     
 `
-export const Wrapper = styled.footer`
+export const ContentWrapper = styled.footer`
     display: flex;
     justify-content: space-around;
     height: 100%;
@@ -29,7 +29,7 @@ export const Wrapper = styled.footer`
         }
     }
 `
-export const Div = styled.div`
+export const Group = styled.div`
     gap: 15px;
 `
 export const Container = styled.div`
