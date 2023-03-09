@@ -189,7 +189,7 @@ export const BoxContainer = styled.div`
         width: 250px;
         height: 250px;
         position: relative;
-        top: 120px;
+        top: 60px;
         left: 250px;
     }
     /* div{height: 70px;} */
@@ -202,12 +202,12 @@ export const BoxContainer = styled.div`
         top: 40px;
     }
     div:nth-child(3){
-        top: 270px;
+        top: 220px;
         right: -20px;
     }
     div:nth-child(4){
         left: 430px;
-        top: 200px;
+        top: 150px;
         width: 190px;
     }
     @media (max-width: 1300px){

@@ -19,8 +19,11 @@ export const MainWrapper = styled.div`
         height: 53px;
         transform: rotateX(180deg);
         
-        @media (max-width: 365px){
-            width: 20%;
+        @media (max-width: 450px){
+            width: 25%;
+        }
+        @media (max-width: 390px){
+            width: 22%;
         }
     }
     `
