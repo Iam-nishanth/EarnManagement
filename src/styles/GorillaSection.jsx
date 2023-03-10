@@ -60,10 +60,9 @@ export const InputContainer = styled.div`
     align-items: center;
     border: 2px solid rgba(255,255,255,0.18);
     border-radius: 89px;
-    background: rgba(255, 255, 255, 0.03);
     input{
         height: 100%;
-        background: rgba(255, 255, 255, 0.03);
+        background: transparent;
         color: #fff;
         padding: 20px;
         font-size: 16px;
@@ -80,7 +79,7 @@ export const InputContainer = styled.div`
     select{
         height: 100%;
         width: 140px;
-        background-color: transparent;
+        background: transparent;
         color: rgba(255, 255, 255, 0.18);
         font-size: 16px;
         border:  unset;
@@ -91,7 +90,6 @@ export const InputContainer = styled.div`
         font-size: 16px;
         padding-left: 10px;
         transition: all 0.5s ease-in-out;
-        background: rgba(255, 255, 255, 0.03);
 
 
         appearance: none;
