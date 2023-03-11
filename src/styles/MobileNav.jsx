@@ -40,10 +40,6 @@ export const MobileMenu = styled.ul`
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4,80px);
     text-align: center;
-
-    /* @media screen and (max-width: ) {
-        
-    } */
 `
 export const SocialMenu = styled.ul`
     display: flex;
@@ -55,8 +51,6 @@ export const SocialMenu = styled.ul`
         font-size:30px ;
     }
 `
-
-// export const MobileMenu = 
 export const NLink =  styled(Link)`
     display: flex;
     align-items: center;

@@ -1,14 +1,14 @@
 import React from 'react'
 import gorilla from '../assets/images/gorilla.png'
 import bitcoin from '../assets/images/bitcoin.png'
-import { BoxContainer, Button, H1, ImageContainer, Img, Input, InputContainer, MainWrapper, Para, Select, TextBox, TitleContainer, SelectOption } from '../../styles/GorillaSection'
+import { BoxContainer, Button, TitleH1, ImageContainer, Img, Input, InputContainer, MainWrapper, Para, Select, TextBox, TitleContainer, SelectOption, TitlePara, BitcoinImg, TextBoxP } from '../../styles/GorillaSection'
 
 const GorillaSection = () =>
     <MainWrapper>
 
         <TitleContainer>
-            <H1>Guild Hub of the Metaverse</H1>
-            <Para>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis mattis hendrerit. Praesent vel risus in risus vestibulum aliquet. </Para>
+            <TitleH1>Guild Hub of the Metaverse</TitleH1>
+            <TitlePara>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis mattis hendrerit. Praesent vel risus in risus vestibulum aliquet. </TitlePara>
             <InputContainer>
                 <Input placeholder='Enter Email address' />
                 <Select>
@@ -28,18 +28,18 @@ const GorillaSection = () =>
             <Img src={gorilla} className='gorilla' alt='gorilla-img' />
             <BoxContainer>
                 <TextBox >
-                    <Para>Automate payments for quick transparent cashout?</Para>
+                    <TextBoxP>Automate payments for quick transparent cashout?</TextBoxP>
                 </TextBox>
                 <TextBox>
-                    <Para>You mean, I can track my scholars's performance</Para>
+                    <TextBoxP>You mean, I can track my scholars's performance</TextBoxP>
                 </TextBox>
                 <TextBox>
-                    <Para>All on one platform that doesn't lag? You're kidding</Para>
+                    <TextBoxP>All on one platform that doesn't lag? You're kidding</TextBoxP>
                 </TextBox>
                 <TextBox>
-                    <Para>Search and Breed Axies and NFTs</Para>
+                    <TextBoxP>Search and Breed Axies and NFTs</TextBoxP>
                 </TextBox>
-                <Img src={bitcoin} />
+                <BitcoinImg src={bitcoin} />
             </BoxContainer>
         </ImageContainer>
 
