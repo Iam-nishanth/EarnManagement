@@ -16,17 +16,16 @@ export const MainWrapper = styled.div`
         border-bottom-right-radius: 26px;
         top: -16px;
         width: 17.6%;
-        height: 53px;
+        height: 50px;
         transform: rotateX(180deg);
         
-        @media (max-width: 365px){
-            width: 20%;
+        @media (max-width: 450px){
+            width: 22%;
         }
     }
     `
 export const Details = styled.div`
     align-self: center;
-
     width: 100%;
     max-width: 65%;
     display: flex;
@@ -35,36 +34,36 @@ export const Details = styled.div`
     transition: all 0.5s ease-in-out;
     border-left: 3px solid rgba(255,255,255,0.12);
 
-    
-
-    h1{
-        font-size: 80px;
-        font-weight: 500;
-    }p{
-        font-size: 18px;
-        font-weight: 400;
-        
-    }
     @media (max-width: 620px ){
-        h1{
-            font-size: 70px;
-        }p{
-            font-size: 16px;
-        }
         padding-bottom: 75px;
     }
     @media (max-width: 500px){
-        /* text-align: center; */
         width: 100%;
-        /* padding-right: 30px; */
-        h1{
-            font-size: 50px;
-            font-weight: 500;
-        }p{
-            font-size: 14px;
-            width: 200px;
-        }
         padding-left: 20px;
+    }
+`
+export const DetailsPara = styled.p`
+    font-size: 18px;
+    font-weight: 400;
+    @media (max-width: 620px){
+        font-size: 16px;
+    }
+    @media (max-width: 500px){
+        font-size: 14px;
+        width: 200px;
+    }
+`
+
+export const DetailsHeading = styled.h1`
+    font-size: 80px;
+    font-weight: 500;
+
+    @media (max-width: 620px){
+        font-size: 70px;
+    }
+    @media (max-width: 500px){
+        font-size: 50px;
+        font-weight: 500;
     }
 `
 export const FirstBox = styled.div`
@@ -74,9 +73,9 @@ export const FirstBox = styled.div`
     gap: 30px;
     height: 350px;
     transition: all 0.5s ease-in-out;
-    p{
+    /* p{
         width: 380px;
-    }
+    } */
     @media (max-width: 600px){
         height: 280px;
     }
@@ -92,11 +91,11 @@ export const Container = styled.div`
     
     @media (max-width: 450px){
         align-self: center;
-        max-width: 320px;
+        max-width: 87%;
         padding-right: 15px;
     }
     @media(max-width: 330px){
-        max-width: 300px;
+        max-width: 87%;
     }
     
 `
@@ -238,7 +237,6 @@ export const BoxGroup = styled.div`
     max-width: 65%;
     height: 250px;
     align-self: center;
-    /* gap: 30px; */
     position: relative;
     transition: all 0.5s ease-in-out;
 
@@ -249,19 +247,14 @@ export const BoxGroup = styled.div`
         text-align: right;
         border-right: 3px solid rgba(255, 255, 255, 0.12);
         border-top-right-radius: 20px;
-        
-
-            border-bottom-right-radius: 20px;
-        
+        border-bottom-right-radius: 20px;
         position: relative;
         left: 17px;
-        /* bottom: 5px; */
         height: 260px;
 
     }
     &:nth-child(even){
         border: 3px solid rgba(255, 255, 255, 0.12);
-        /* border-radius: 30px  30px; */
         border-right: none;
         border-bottom-left-radius: 30px;
         border-top-left-radius: 30px;
@@ -320,8 +313,6 @@ export const BoxGroup = styled.div`
             padding-left: 70px;
         }
     }
-    
-
 `
 export const TextBox1 = styled.div`
     padding-left: 150px;
@@ -330,38 +321,45 @@ export const TextBox1 = styled.div`
     flex-direction: column;
     gap: 5px;
 
-    h1{
+    @media (max-width: 1000px){
+        padding-left: 100px;
+    }
+    @media (max-width: 600px){
+        padding-left: 90px;
+    }
+    @media (max-width: 375px){
+        padding-left: 150px;
+    }
+`
+export const FirstBoxH1 = styled.h1`
         font-size: 70px;
         font-weight: 100;
-    }h3{
+        @media (max-width: 1000px){
+            font-size: 65px;
+        }
+        @media (max-width: 500px){
+            font-size: 50px;
+        }
+
+`
+export const FirstBoxH3 = styled.h3`
         font-size: 33px;
         font-weight: 500;
         color: #15c4c6;
-    }p{
+        @media (max-width: 1000px){font-size:30px;}
+        @media (max-width: 500px){font-size:25px;}
+`
+export const FirstBoxPara = styled.p`
         font-size: 16px;
         font-weight: 400;
         color: rgba(255,255,255,.39);
         mix-blend-mode: luminosity;
-    }
-    @media (max-width: 1000px){
-        padding-left: 100px;
-        h1{font-size: 65px;}
-        h3{font-size:30px;}
-        p{width:280px;}
-    }
-    @media (max-width: 600px){
-        padding-left: 90px;
-        p{width:220px;}
-    }
-    @media (max-width: 500px){
-        h1{font-size:50px;}
-        h3{font-size:25px;}
-        p{
-            font-size:14px;
-            width: 150px;
-        }
-        padding-left: 150px;
-    }
+        @media (max-width: 1000px){width:280px ;}
+        @media (max-width: 600px){width:220px ;}
+        @media (max-width: 500px){
+            width:150px ;
+            font-size: 14px;
+            }
 `
 export const TextBox2 = styled.div`
     transition: all 0.5s ease-in-out;
@@ -369,38 +367,43 @@ export const TextBox2 = styled.div`
     flex-direction: column;
     gap: 5px;
 
-    h1{
-        font-size: 70px;
-        font-weight: 100;
-    }h3{
-        font-size: 33px;
-        font-weight: 500;
-        color: #15c4c6;
-    }p{
-        font-size: 16px;
-        font-weight: 400;
-        color: rgba(255,255,255,.39);
-        mix-blend-mode: luminosity;
-    }
+    
+`
+export const BoxGroupH1 = styled.h1`
+    font-size: 70px;
+    font-weight: 100;
     @media (max-width: 1000px){
-        h1{font-size: 65px;}
-        h3{font-size:30px;}
-    }
-    @media (max-width: 650px){
-        /* text-align: center; */
-        p{
-            width: 220px;
-        }
+        font-size: 65px;
     }
     @media (max-width: 500px){
-        h1{font-size:50px;}
-        h3{font-size:25px;}
-        p{
-            font-size:14px;
-            width: 150px;
-        }
+        font-size: 50px;
     }
 `
+export const BoxGroupH3 = styled.h3`
+    font-size: 33px;
+    font-weight: 500;
+    color: #15c4c6;
+    @media (max-width: 1000px){
+        font-size: 30px;
+    }
+    @media (max-width: 500px){
+        font-size: 25px;
+    }
+`
+export const BoxGroupPara = styled.p`
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255,255,255,.39);
+    mix-blend-mode: luminosity;
+    @media (max-width: 650px){
+        width: 220px;
+    }
+    @media (max-width: 500px){
+        font-size: 14px;
+        width: 150px;
+    }
+`
+
 export const Img = styled.img``
 export const H1 = styled.h1``
 export const H3 = styled.h3`` 

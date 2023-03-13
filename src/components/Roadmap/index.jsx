@@ -1,6 +1,6 @@
 import React from 'react'
 import monero from '../assets/images/monero.png'
-import { MainWrapper, FirstBox, Img, Container, Details, Box1, InnerCircle1, Box, InnerCircle, BoxGroup, ImageContainer, TextBox1, H1,H3,TextBox2, Para } from '../../styles/Roadmap.jsx'
+import { MainWrapper, FirstBox, Img, Container, Details, Box1, InnerCircle1, Box, InnerCircle, BoxGroup, ImageContainer, TextBox1, H1,H3,TextBox2, Para, DetailsHeading, DetailsPara, FirstBoxH1, FirstBoxH3, FirstBoxPara, BoxGroupH1, BoxGroupH3, BoxGroupPara } from '../../styles/Roadmap.jsx'
 
 const Roadmap = () => {
 
@@ -11,8 +11,8 @@ const Roadmap = () => {
         <MainWrapper>
             <Container>
                 <Details>
-                    <h1>Road Map</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adiposcing elit.</p>
+                    <DetailsHeading>Road Map</DetailsHeading>
+                    <DetailsPara>Lorem ipsum dolor sit amet, consectetur adiposcing elit.</DetailsPara>
                 </Details>
                 <ImageContainer>
                     <FirstBox className='.first'>
@@ -20,9 +20,9 @@ const Roadmap = () => {
                             <InnerCircle1/>
                         </Box1>
                         <TextBox1>
-                            <H1>{year}</H1>
-                            <H3>Q1</H3>
-                            <Para>{text}</Para>
+                            <FirstBoxH1>{year}</FirstBoxH1>
+                            <FirstBoxH3>Q1</FirstBoxH3>
+                            <FirstBoxPara>{text}</FirstBoxPara>
                         </TextBox1>
                     </FirstBox>
                     <Img src={monero} />
@@ -33,9 +33,9 @@ const Roadmap = () => {
                             <InnerCircle />
                         </Box>
                         <TextBox2 className={'textbox' + elementInArray}>
-                            <H1>{year}</H1>
-                            <H3>{'Q' + elementInArray}</H3>
-                            <Para>{text}</Para>
+                            <BoxGroupH1>{year}</BoxGroupH1>
+                            <BoxGroupH3>{'Q' + elementInArray}</BoxGroupH3>
+                            <BoxGroupPara>{text}</BoxGroupPara>
                         </TextBox2>
                     </BoxGroup>
                 ))}

@@ -1,14 +1,14 @@
 import React from 'react'
-import {FaDiscord,  FaMobileAlt, FaTwitter} from 'react-icons/fa'
-import {FooterWrapper,Group,Container1, Container2, Copyright, Icons, Discord,H3,Link, ContentWrapper} from '../../styles/Footer'
+import { FaDiscord, FaMobileAlt, FaTwitter } from 'react-icons/fa'
+import { FooterWrapper, Group, Container1, Container2, Copyright, Icons, Discord, H3, Link, ContentWrapper, DiscordH3, MobileH3, CopyrightPara, DiscordPara, MainContainer } from '../../styles/Footer'
 
-const Footer = () => 
-
-        <FooterWrapper>
-            <ContentWrapper>
+const Footer = () =>
+    <MainContainer>    
+    <FooterWrapper>
+        <ContentWrapper>
             <Container1>
                 <Group>
-                   <H3>Fingertips</H3> 
+                    <H3>Fingertips</H3>
                     <Link>Home</Link>
                     <Link>Blog</Link>
                     <Link>Roadmap</Link>
@@ -30,14 +30,18 @@ const Footer = () =>
                 </Group>
             </Container1>
             <Container2>
-                <H3 className='first'><FaDiscord/> Join us on Discord</H3>
-                <H3><FaMobileAlt/>(239) 555-0193</H3>
-                <Icons><FaTwitter/><FaDiscord/></Icons>
-            </Container2></ContentWrapper>
-            <Copyright><p>@Copyright. earnmanagement 2022</p></Copyright>
-            <Discord><FaDiscord/><p>Join Discord</p></Discord>
+                <DiscordH3 className='first'><FaDiscord /> Join us on Discord</DiscordH3>
+                <MobileH3><FaMobileAlt />(239) 555-0193</MobileH3>
+                <Icons><FaTwitter /><FaDiscord /></Icons>
+            </Container2>
+        </ContentWrapper>
+        <Copyright><CopyrightPara>@Copyright. earnmanagement 2022</CopyrightPara></Copyright>
+        <Discord>
+            <FaDiscord /><DiscordPara>Join Discord</DiscordPara>
+        </Discord>
 
-        </FooterWrapper>
+    </FooterWrapper></MainContainer>
+
 
 
 
